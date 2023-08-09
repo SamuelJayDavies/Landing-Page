@@ -1,19 +1,223 @@
 html {
     --main-bg-colour: #1F2937;
+    --secondary-text-colour: #E5E7EB;
+    --button-colour: #3882F6;
+    --quote-bg-colour: #E5E7EB;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Merriweather', serif;
     font-family: 'Space Mono', monospace;
     font-family: 'Work Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
+    margin: 0px;
     background-color: var(--main-bg-colour);
     font-family: "Work Sans";
+    color: white;
+}
+
+.main-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
     display: flex;
+    flex: 1;
     justify-content: space-around;
-    
+    align-items: center;
     color: white;
+
+    margin-bottom: 80px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    color: var(--secondary-text-colour);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    margin: 12px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.introduction {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-bottom: 100px;
+}
+
+.introduction-text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.introduction-text h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.introduction-text p {
+    color: var(--secondary-text-colour);
+    margin-top: 5px;
+}
+
+.introduction-text button, 
+    .sign-up button {
+    background-color: var(--button-colour);
+    padding: 8px 16px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
+
+.img-container img {
+    width: 500px;
+    height: 300px;
+}
+
+.information {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 75px;
+    padding: 5px;
+}
+
+.information h1 {
+    color: var(--main-bg-colour);
+    padding: 16px;
+}
+
+.information p {
+    margin-top: 6px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-container img {
+    border-radius: 10px;
+    border-color: var(--button-colour);
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.info p {
+    width: 175px;
+}
+
+.quote-container {
+    background-color: var(--quote-bg-colour);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    max-width: 670px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: black;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 32px;
+
+    margin-bottom: 0px;
+}
+
+.quote-author {
+    text-align: end;
+    font-weight: bolder;
+    color: var(--main-bg-colour);
+    font-size: 32px;
+
+    margin-top: 0px;
+}
+
+.sign-up-container {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 700px;
+    height: 50px;
+
+    background-color: var(--button-colour);
+    border-radius: 10px;
+
+    padding: 64px;
+    gap: 64px;
+}
+
+#call-to-action {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sign-up p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sign-up button {
+    border: solid;
+    height: 50px;
+    border-color: white;
+    padding: 8px 16px;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
 }
