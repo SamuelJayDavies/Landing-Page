@@ -1,0 +1,19 @@
+html {
+    --main-bg-colour: #1F2937;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg-colour);
+    font-family: "Work Sans";
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    
+    color: white;
+}
